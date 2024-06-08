@@ -1,0 +1,65 @@
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cards-box {
+    background-color: #f8f9fa; 
+    padding: 50px 20px 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    max-width: 1200px; 
+    margin-bottom: 20px; 
+}
+
+.cards-box.first-group {
+    margin-top: 25px; /* Add margin to bring down the first group */
+}
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+.text {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card {
+    margin-top: 20px; /* Reduced margin at the top */
+    width: 100%; /* Ensure the card takes full column width */
+}
+
+.card-img-top {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.col-custom {
+    flex: 0 0 20%; /* Ensure each column takes up 20% width for five columns */
+    max-width: 20%; /* Ensure the max width of each column is 20% */
+}
+
+.row {
+    justify-content: space-around; /* Add space around the cards to align them properly */
+}
