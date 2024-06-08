@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cards-box {
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 50px 20px 20px; /* Added top padding */
+    border-radius: 8px; /* Rounded corners for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a box shadow */
+    width: 80%; /* Ensure the box takes appropriate width */
+    max-width: none; /* Remove the max-width constraint */
+    margin-bottom: 20px; /* Add space between the groups */
+}
+
+.cards-box.first-group {
+    margin-top: 50px; /* Add margin to bring down the first group */
+}
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+.text {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card {
+    margin-top: 20px; /* Reduced margin at the top */
+    width: 100%; /* Ensure the card takes full column width */
+}
+
+.card-img-top {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    scale: 75%;
+}
+
+.col-custom {
+    flex: 0 0 19%; /* Ensure each column takes up a bit less than 20% width for five columns with spacing */
+    max-width: 19%; /* Ensure the max width of each column is 19% */
+    margin-right: 1%; /* Add space between cards */
+}
+
+.col-custom:last-child {
+    margin-right: 0; /* Remove margin from the last card */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Ensure cards stay in a single row */
+}
