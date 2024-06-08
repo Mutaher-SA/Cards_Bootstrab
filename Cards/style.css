@@ -15,17 +15,17 @@ body, html {
 }
 
 .cards-box {
-    background-color: #f8f9fa; 
-    padding: 50px 20px 20px; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    width: 80%; 
-    max-width: 1200px; 
-    margin-bottom: 20px; 
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 50px 20px 20px; /* Added top padding */
+    border-radius: 8px; /* Rounded corners for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a box shadow */
+    width: 80%; /* Ensure the box takes appropriate width */
+    max-width: 1200px; /* Max width for the box */
+    margin-bottom: 20px; /* Add space between the groups */
 }
 
 .cards-box.first-group {
-    margin-top: 25px; /* Add margin to bring down the first group */
+    margin-top: 50px; /* Add margin to bring down the first group */
 }
 
 .logo-text-container {
@@ -60,6 +60,8 @@ body, html {
     max-width: 20%; /* Ensure the max width of each column is 20% */
 }
 
-.row {
-    justify-content: space-around; /* Add space around the cards to align them properly */
+.row.flex-row {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure cards stay in a single row */
+    overflow-x: auto; /* Add horizontal scrolling if necessary */
 }
